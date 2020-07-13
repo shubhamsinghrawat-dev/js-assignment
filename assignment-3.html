@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>current date</title>
+</head>
+<body>
+    <script>
+        var curday = function(dt){
+            today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; 
+            var yyyy = today.getFullYear();
+
+            if(dd<10) dd='0'+dd;
+            if(mm<10) mm='0'+mm;
+            return (mm+dt+dd+dt+yyyy);
+            };
+            document.write(curday('-'));
+            document.write("<br>");
+            document.write(curday('/'));
+            document.write("<br>");
+            
+
+            document.write("<br>");
+            var curday = function(mt){
+            today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; 
+            var yyyy = today.getFullYear();
+
+            if(dd<10) dd='0'+dd;
+            if(mm<10) mm='0'+mm;
+            return (dd+mt+mm+mt+yyyy);
+            };
+            document.write(curday('-'));
+            document.write("<br>");
+            document.write(curday('/'));           
+    </script>
+</body>
+</html>
