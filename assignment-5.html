@@ -1,0 +1,57 @@
+           <!-- DIFFERENCE BETWEEN VAR CONST AND let -->
+
+
+   <!-- VAR         -->
+		<!-- Using var you can reassign it with a new value. -->
+		<!-- EXAMPLE -->
+		<!-- <script type="text/javascript">
+			function myFn() {
+			  var x = 1;
+			  x = 30;
+			  var x = 101;
+
+			  console.log(x);  
+			}
+
+			myFn();
+		</script> -->
+		
+
+
+    <!-- let -->
+    		<!-- Using let you can reassign variables, but its syntax is more strict than var. -->
+    		<!-- EXAMPLE -->
+    		<!-- <script type="text/javascript">
+    			function myFn() {
+				  let x = 1;
+				  x = 30;   
+				  x = 101;
+
+				  console.log(x);  
+				}
+
+				myFn();
+
+				console.log(x); 
+    		</script> -->
+
+
+   <!-- const 		 -->
+   			<!-- it’s block-scoped, however, you can’t reassigned it. -->
+   			<!-- EXAMPLE -->
+   			<script type="text/javascript">
+   				const myBoolean = true;
+
+					if (myBoolean) {
+					  const alpha = [
+					    'abc',
+					    'def',
+					    'geh',
+					    'ijk'
+					  ];
+
+					  console.log(alpha);
+					}
+
+					console.log(alpha); 
+   			</script>
